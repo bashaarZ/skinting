@@ -1,0 +1,37 @@
+@import "tailwindcss";
+
+:root {
+  --paper: #f6f2ea;
+  --paper2: #ede8dc;
+  --ink: #1a1a1a;
+  --ink2: #5a5550;
+  --ink3: #9a9590;
+  --acc: #e06a33;
+  --acc2: #f5c9a0;
+  --mint: #cde8d2;
+  --yell: #fff4a8;
+  --sh: 4px 4px 0 #1a1a1a;
+}
+
+@theme inline {
+  --font-caveat: var(--font-caveat);
+  --font-kalam: var(--font-kalam);
+  --color-paper: var(--paper);
+  --color-paper2: var(--paper2);
+  --color-ink: var(--ink);
+  --color-ink2: var(--ink2);
+  --color-acc: var(--acc);
+  --color-acc2: var(--acc2);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background: var(--paper);
+  background-image: radial-gradient(circle at 1px 1px, rgba(0, 0, 0, 0.12) 1px, transparent 0);
+  background-size: 18px 18px;
+  color: var(--ink);
+  font-family: var(--font-kalam), "Kalam", cursive;
+}
